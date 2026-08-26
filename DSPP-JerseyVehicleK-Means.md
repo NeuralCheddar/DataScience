@@ -37,14 +37,17 @@ The data was then saved as Cleansed_vehicle_data.csv and imported into Amazon Sa
 Data was checked for null values using python. 
 
 ![histogram](assets/Figure1.png) 
+
 Figure 1: using .info() to check for null values
 
- 
+![histogram](assets/Figure2.png) 
+
 Figure 2: Changing data type of CAR_AGE column to integer for the model 
 
 Prior to model development, CO₂ and vehicle age were standardized using StandardScaler to avoid variables measured on larger scales disproportionately influencing centroid placement
 
- 
+![histogram](assets/Figure3.png) 
+
 Figure 3: Visually checking the data for clusters. 
 
 No clear clusters are initially visible in Figure 3, although zero-emission vehicles appear distinct.
@@ -58,30 +61,33 @@ elbow method. The cluster number obtained by using the Elbow method is a subject
 
 Running the elbow method on the data shows that potentially, the ideal number for K is around 4. 
 
- 
+![histogram](assets/Figure4.png) 
+
 Figure 4 – The Elbow plot. This is showing that the ideal number of clusters is 4 
 
 Another method of identifying the best number of clusters is using the silhouette method. It combines the two factors of cohesion and resolution. Cohesion is the similarity between the object and the cluster. When compared to other clusters, it is called separation. This comparison is achieved by the value of the Silhouette, which is in the range −1–1. The Silhouette value is close to 1, indicating that there is a close relationship between the object and the cluster (Yuan and Yang, 2019).
 
 
 Here it shows that between range 3 and 5 could be the best number of clusters. 3 was tried but there was not enough business context. When re-run, the elbow plot showed the most meaningful groupings in the data when K=4.
- 
+
+![histogram](assets/Figure5.png) 
+
 Figure 5: Silhouette method for best fit. Showing 3 or 4 as being the best number of clusters. 
 
-
-
-
+![histogram](assets/Figure6.png) 
  
 Figure 6: Model run with 4 clusters as advised by the elbow plot and silhouette method.
 
 In relation to figure 6, it seems the purple outliers are driving the data to be grouped close together and throwing off the scale so outliers above 600 CO2 were removed to get a better fit for the model and to make it more interpretable. 
 
- 
+![histogram](assets/Figure7.png) 
+
 Figure 7: The final output of the clustering model showing 4 clusters on the adjusted scale after removing the outliers. 
 
 Outliers were removed which improved visual separation, although the mid-range clusters continued to overlap. Engine size was therefore added as a third feature. 
 
- 
+![histogram](assets/Figure8.png) 
+
 Figure 8: 3D chart adding CC as another variable. 
 
 The analysis of the clusters identified 4 potentially meaningful groups in the data which are as follows: 
