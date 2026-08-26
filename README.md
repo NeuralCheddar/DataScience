@@ -1,12 +1,12 @@
-# DataScienceSubmission
-
 # Data Science CV
+TBC
 
 ## Work Experience
-- Banking
+Data Analyst - 6 Years
   
 ## Education
-- 
-## Projects
+Grainville School
+Highlands College
 
-K-means Jersey Vehicle Clustering: 
+## Projects
+K-means Jersey Vehicle Clustering - See project
