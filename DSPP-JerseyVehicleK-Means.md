@@ -18,7 +18,7 @@ Recommendation is to compare HDBSCAN and other clustering models and estimate mi
 
 ## 2 - Methods 
 
-###2.1 - Data collection 
+### 2.1 - Data collection 
 
 The data was sourced from the Jersey government open data website. Link to the dataset:  All Vehicles Registered in Jersey - Datasets - Government of Jersey Open Data. 
 
