@@ -36,7 +36,7 @@ The data was then saved as Cleansed_vehicle_data.csv and imported into Amazon Sa
 
 Data was checked for null values using python. 
 
- 
+![histogram](assets/Figure1.png) 
 Figure 1: using .info() to check for null values
 
  
