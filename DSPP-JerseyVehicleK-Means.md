@@ -1,6 +1,6 @@
-Data Science Project – Clustering using ‘All vehicles registered in Jersey’ dataset
+# Data Science Project – Clustering using ‘All vehicles registered in Jersey’ dataset
 
-1 – Executive Summary 
+## 1 – Executive Summary 
 
 The aim of this project is to use machine learning predictive algorithms to try and identify any meaningful groups within the government of Jerseys open source dataset for vehicles in Jersey. The features used in the model were CO2, Age (of vehicle) and CC.  
 
@@ -16,9 +16,9 @@ By identifying groups of similar vehicles, policymakers and businesses may gain 
 
 Recommendation is to compare HDBSCAN and other clustering models and estimate missing CO2 values using age, engine size and fuel type before rerunning the analysis
 
-2 - Methods 
+## 2 - Methods 
 
-2.1 - Data collection 
+###2.1 - Data collection 
 
 The data was sourced from the Jersey government open data website. Link to the dataset:  All Vehicles Registered in Jersey - Datasets - Government of Jersey Open Data. 
 
@@ -26,7 +26,7 @@ File: All registered vehicles to end June 2026.csv. The dataset has 7 columns an
 
 The dataset was chosen due to its size and suitability for clustering analysis. 
 
-2.2 - Data preprocessing
+### 2.2 - Data preprocessing
 
 The project used Excel for some of the data transformation. The age column was created from the ‘REG'D IN JERSEY’ column using the formula =IF(D2="",0,DATEDIF(D2,TODAY(),"Y")). Blank cells were assigned zero to avoid processing errors. 
 
@@ -49,7 +49,7 @@ Figure 3: Visually checking the data for clusters.
 
 No clear clusters are initially visible in Figure 3, although zero-emission vehicles appear distinct.
 
-2.3 - Data analysis
+### 2.3 - Data analysis
 
 DBSCAN and HDBSCAN were considered but K-Means was selected due to its scalability and interpretability. Hierarchical clustering was discounted due to computational cost
 
@@ -110,7 +110,7 @@ Finally, the removal of extreme CO₂ outliers improved model interpretability b
 These limitations should be considered when applying the findings to policy or commercial decision-making.
 
 
-3 – Recommendations
+## 3 – Recommendations
 
 The clustering analysis successfully identified four vehicle clusters based on age and emissions characteristics. These findings provide a foundation for further analysis and the potential for operational use.
 
@@ -122,7 +122,7 @@ From a business perspective, the results could support government initiatives re
 
 Finally, periodic rerunning of the clustering model would allow changes in vehicle ownership patterns and emissions profiles to be monitored, providing ongoing insights that can help drive future decision making
 
-4 - Ethical, Privacy and Regulatory Considerations
+## 4 - Ethical, Privacy and Regulatory Considerations
 
 The dataset used in this project was obtained from the Government of Jersey Open Data Portal and did not contain personally identifiable information as it was likely removed before publication online. As a result, privacy risks associated with individual vehicle owners were minimal.
 
@@ -133,7 +133,7 @@ To mitigate these risks, findings were validated using multiple visualization te
 
 
  
-5 - References
+## 5 - References
 
 
 Ahmed, M., Seraj, R. and Islam, S.M.S. (2020). The k-means Algorithm: A Comprehensive Survey and Performance Evaluation. Electronics, [online] 9(8), p.1295. doi:10.3390/electronics9081295. 
