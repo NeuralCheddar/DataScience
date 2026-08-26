@@ -2,15 +2,12 @@
 TBC
 
 ## Work Experience
-Banking - 12 Years
-
+Banking - 12 Years  
 6 of these years as a Data Analyst
   
 ## Education
-BPP University - Data Science
-
-Grainville School
-
+BPP University - Data Science  
+Grainville School  
 Highlands College
 
 ## Projects
