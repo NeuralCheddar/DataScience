@@ -9,4 +9,4 @@ Grainville School
 Highlands College
 
 ## Projects
-K-means Jersey Vehicle Clustering - See project
+K-means Jersey Vehicle Clustering - See DSPP-JerseyVehicleK-Means.md
