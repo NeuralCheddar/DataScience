@@ -9,4 +9,4 @@
 - 
 ## Projects
 
-![histogram](assets/histogram-example.png)
+K-means Jersey Vehicle Clustering: 
